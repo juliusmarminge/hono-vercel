@@ -9,3 +9,5 @@
 - `vc build` outputs `.js` files with `cjs` format, even though the `package.json#type` is set to `module`. This causes `ReferenceError: exports is not defined` when the function is invoked:
   ![CleanShot 2024-04-29 at 12 27 48@2x](https://github.com/juliusmarminge/hono-vercel/assets/51714798/f6dc27ca-8828-4ca8-8bd5-ee5d83af9acc)
 
+- `vc build` output references to files that doesn't exist? In the `.vc-config.json` file there's a reference to `packages/validators/node_modules/@hono/zod-openapi` but that doesn't exist in the built output:
+  ![CleanShot 2024-04-29 at 12 35 54@2x](https://github.com/juliusmarminge/hono-vercel/assets/51714798/8bd5ced6-6a17-4136-8f4c-19c3e9bab8ed)
