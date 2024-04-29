@@ -7,4 +7,5 @@
   ![CleanShot 2024-04-29 at 12 26 35@2x](https://github.com/juliusmarminge/hono-vercel/assets/51714798/b257c615-f6e6-41a2-9235-b27e2088efe4)
 
 - `vc build` outputs `.js` files with `cjs` format, even though the `package.json#type` is set to `module`. This causes `ReferenceError: exports is not defined` when the function is invoked:
-  ![image](https://github.com/juliusmarminge/hono-vercel/assets/51714798/6c0d3864-26bb-466b-86b4-4ba6b12c78d9)
+  ![CleanShot 2024-04-29 at 12 27 48@2x](https://github.com/juliusmarminge/hono-vercel/assets/51714798/f6dc27ca-8828-4ca8-8bd5-ee5d83af9acc)
+
