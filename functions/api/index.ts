@@ -38,7 +38,9 @@ const route = createRoute({
       content: {
         "application/json": {
           schema: z.object({
-            contentDisposition: ContentDispositionValidator
+            contentDisposition: ContentDispositionValidator.openapi({
+              description: "The content-disposition header to use for the file.",
+            })
           }),
         },
       },
