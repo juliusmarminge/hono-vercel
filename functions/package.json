@@ -1,0 +1,19 @@
+{
+  "name": "api",
+  "type": "module",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "@hono/zod-openapi": "^0.9.8",
+    "@uploadthing/validators": "workspace:*",
+    "hono": "^4.2.8",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@uploadthing/tsconfig": "workspace:*",
+    "typescript": "^5.4.5",
+    "vercel": "^32.4.1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@uploadthing/validators",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/zod-openapi": "^0.9.8",
+    "@uploadthing/mime-types": "0.2.6",
+    "@uploadthing/shared": "6.4.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@uploadthing/tsconfig": "workspace:*",
+    "typescript": "5.4.2"
+  }
+}
